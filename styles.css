@@ -1,0 +1,72 @@
+/*Containers*/
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 768px;
+}
+
+.container-hist {
+  margin-top: 25px;
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-left: auto;
+  max-width: 768px;
+  padding-left: 18px;
+}
+
+.list-group-2 {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 768px;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/*Cards*/
+.card-2 {
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card-img-bd {
+  border-radius: 4px 4px 0px 0px;
+}
+
+/*Divisor*/
+.hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/*Formulário de Login*/
+.login-form {
+  width: 350px;
+  margin: 30px auto;
+  padding: 25px 20px;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.form-group {
+  padding-bottom: 15px;
+}
+
+/*Botões*/
+.btn-primary {
+  margin-bottom: 20px;
+}
+
+.btn-2 {
+  color: #000;
+  background-color: #56CCF2;
+}
+
+/*Layout listas*/
+.listagens {
+  width: 500px;
+}

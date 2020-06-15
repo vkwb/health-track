@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <!-- Material Design for Bootstrap fonts and icons -->
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+        
+          <!-- Material Design for Bootstrap CSS -->
+          <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+          
+          <!-- Estilos -->
+          <link rel="stylesheet" href="/styles.css">
+
+    <title>Frequência Cardíaca - Health Track</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/Images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/index.html">
+            <img src="/Images/LogoHealthTrackCurva.svg" alt="Logo Health Track" height="30" class="d-inline-block align-top">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Dashboard</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/atividades.html">Atividades</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/historico.html">Histórico</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/cardio.html">Frequência Cardíaca</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/peso.html">Peso</span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <a class="btn btn-dark btn-raised" href="/login.html" role="button">Login</a>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron pl-4 pr-4">
+        <h1 class="h4 text-center">Frequência Cardíaca</h1>
+        <p class="h6 text-secondary text-center">Adicione, altere ou remova manualmente sua frequência cardíaca</p>
+    </div>
+    <div class="list-group-2 mb-4">
+        <ul class="list-group pt-3 pl-3">
+            <a class="list-group-item">
+                <div class="bmd-list-group-col">
+                    <p class="list-group-item-heading">83 BPM</p>
+                    <p class="list-group-item-text">05/01/2020</p>
+                </div>
+                <i class="material-icons float-right pr-3">edit</i>
+            </a>    
+        </ul>
+        <div class="w-100"><hr></div>
+        <ul class="list-group pt-3 pl-3">
+            <a class="list-group-item">
+                <div class="bmd-list-group-col">
+                    <p class="list-group-item-heading">92 BPM</p>
+                    <p class="list-group-item-text">15/01/2020</p>
+                </div>
+                <i class="material-icons float-right pr-3">edit</i>
+            </a>
+        </ul>
+        <div class="w-100"><hr></div>
+        <ul class="list-group pt-3 pl-3">
+            <a class="list-group-item">
+                <div class="bmd-list-group-col">
+                   <p class="list-group-item-heading">97 BPM</p>
+                    <p class="list-group-item-text">28/01/2020</p>
+                </div>
+                <i class="material-icons float-right pr-3">edit</i>
+            </a>    
+        </ul>
+    </div>
+    <div class="container-fluid">
+        <button type="button" class="btn btn btn-info bmd-btn-fab float-right" data-toggle="modal" data-target="#modalFab">
+            <i class="material-icons">add</i>
+        </button>
+    </div>
+    <div class="modal fade" id="modalFab" tabindex="-1" role="dialog" aria-labelledby="modalFab" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Adicionar frequência cardíaca</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="cardioInput">Insira sua frequência cardíaca</label>
+                        <input type="number" class="form-control" id="cardioInput" placeholder="BPM">
+                    </div>
+                    <div class="form-group">
+                        <label for="dataPeso">Data da medição</label>
+                        <input type="date" class="form-control" id="dataCardio" placeholder="Data">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-info">Salvar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+        <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+</body>
+</html>

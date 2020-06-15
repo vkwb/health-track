@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, , shrink-to-fit=no">
+        
+         <!-- Material Design for Bootstrap fonts and icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+        
+        <!-- Material Design for Bootstrap CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+        
+        <!-- Estilos -->
+        <link rel="stylesheet" href="/styles.css">
+
+        <title>Health Track</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/Images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/Images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/Images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html">
+                <img src="/Images/LogoHealthTrackCurva.svg" alt="Logo Health Track" height="30" class="d-inline-block align-top">
+            </a>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">Dashboard</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/atividades.html">Atividades</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/historico.html">Histórico</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cardio.html">Frequência Cardíaca</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/peso.html">Peso</span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <a class="btn btn-dark btn-raised" href="/login.html" role="button">Login</a>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="container">
+             <!-- main content -->
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                        <img src="/Images/av_placeholder_2.svg" class="rounded mx-auto mt-5 mb-3 d-block" height="150px" alt="Avatar">
+                        <p class="text-center h6">Olá, Usuário</p>
+                    </div>
+                    <div class="col"></div>
+                </div>                   
+            </div>
+            <div class="list-group-2 mt-3">
+                <ul class="list-group pt-3 pl-3">
+                    <a href="atividades.html" class="list-group-item">
+                        <div class="bmd-list-group-col">
+                             <p class="list-group-item-heading h4">Atividades</p>
+                             <p class="list-group-item-text">Corrida - 3,2 Km</p>
+                        </div>
+                        <i class="material-icons float-right">navigate_next</i>
+                    </a>
+                </ul>
+                <div class="w-100"><hr></div>
+                <ul class="list-group pt-3 pl-3">
+                    <a href="cardio.html" class="list-group-item">
+                        <div class="bmd-list-group-col">
+                            <p class="list-group-item-heading h4">Frequência Cardíaca</p>
+                            <p class="list-group-item-text">97 BPM</p>
+                        </div>
+                        <i class="material-icons float-right">navigate_next</i>
+                    </a>
+                </ul>
+                <div class="w-100"><hr></div>
+                <ul class="list-group pt-3 pl-3 pb-3">
+                    <a href="peso.html" class="list-group-item">
+                        <div class="bmd-list-group-col">
+                            <p class="list-group-item-heading h4">Peso</p>
+                            <p class="list-group-item-text">72 Kg</p>
+                        </div>
+                        <i class="material-icons float-right">navigate_next</i>
+                    </a>
+                </ul>
+            </div>
+        </main>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+        <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+    </body>
+</html>
